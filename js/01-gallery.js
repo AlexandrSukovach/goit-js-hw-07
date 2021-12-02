@@ -1,5 +1,7 @@
 import { galleryItems } from './gallery-items.js';
+
 // Change code below this line
+
 
 console.log(galleryItems);
 
@@ -16,13 +18,16 @@ function createColorCardsMarkup(galleryItems) {
    return galleryItems
       .map(({ preview, description, original }) => {
          return `
-         <div class="gallery__item">
-         <a class="gallery__link" href="${original}">
+         <div class="gallery__item" >
+         <a class="gallery__link" href="${original}" data-lightbox="roadtrip" title="Image ${description}" >
          <img class="gallery__image" src="${preview}"
-         data-source="${original}" alt="Image ${description}"/>
+         data-source="${original}" id ="gallery__image--img" alt="Image ${description}"/>
          </a>
          </div>`;
       })
       // ==============сшиваем массив элементов в одну строку========
       .join('');
-}
+};
+
+
+

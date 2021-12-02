@@ -24,7 +24,7 @@
 
 .gallery__image:hover {
   transform: scale(1.03);
-}
+} 
 
 .gallery__image {
   height: 100%;
@@ -41,4 +41,5 @@
 
 .gallery__link:hover {
   cursor: zoom-in;
-}
+} 
+

@@ -7,13 +7,24 @@
     <title>Image gallery</title>
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <!--ниже подключение через локальный файл -->
+    <!-- <link href="./css/lightbox.css" rel="stylesheet" /> -->
+    <!--ниже подключение через библиотеку -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css" integrity="sha512-n/NKfgu/ornW6hzAcIqm6S9VF9Ms57qLjg8dq/7rDj48oeuTeJAawUM0mEXbuDMGLH2Bw+4fWZae/1qXuut68Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <script  src="./js/jquery-1.11.0.min.js"></script>
+    <!--ниже подключение через локальный файл -->
+    <!-- <script src="./js/lightbox.min.js"></script> -->
+    <!--ниже подключение через библиотеку -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js" integrity="sha512-lMeVFaY2AMSYRjkeBdn0JOhyZ5rL3//wohEwpuE0iZHOmzJlAOWMUayhcJlfomIHyqdvENcFZyCgMbGdD53OfQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
   </head>
   <body>
     <p><a href="index.html">Go back</a></p>
-
     <!-- Add gallery items to this list -->
     <div class="gallery"></div>
 
-    <script src="js/01-gallery.js" type="module"></script>
+    <script defer  src="js/01-gallery.js" type="module"></script>
+
   </body>
 </html>
