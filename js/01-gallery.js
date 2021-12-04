@@ -17,7 +17,7 @@ function createColorCardsMarkup(galleryItems) {
          return `
          <div class="gallery__item" >
          <a class="gallery__link" href="${original}">
-         <img class="gallery__image" src="${preview}" width="509" height="340" alt="${description}"/>
+         <img class="gallery__image" src="${preview}" width="510" height="340" alt="${description}"/>
          </a>
          </div>`;
       })
@@ -47,7 +47,7 @@ function onClickReset(evennts) {
    // ===============из мануала basiclightbox===================
    document.querySelector('.gallery').onclick = () => {
       basicLightbox.create(`
-   <img class="gallery__image" width="1400" height="900"  src="${originalImages}">
+   <img class="gallery__image" width="1300" height="900"  src="${originalImages}">
 	`).show()
 
    };

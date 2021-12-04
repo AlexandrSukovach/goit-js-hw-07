@@ -15,12 +15,19 @@ function createColorCardsMarkup(galleryItems) {
    return galleryItems
       .map(({ preview, description, original }) => {
          return `
-         <div class="gallery__item" >
-         <a class="gallery__link" href="${original}">
-         <img class="gallery__image" src="${preview}" width="509" height="340" alt="${description}"/>
-         </a>
-         </div>`;
+         <a class="gallery__item" href="${original}">
+         <img class="gallery__image" src="${preview}" title="${description}" />
+         </a>`;
       })
       // ==============сшиваем массив элементов в одну строку========
       .join('');
 }
+
+
+// ============плагин инициализации и добав стилей===========
+
+let gallery = new SimpleLightbox('.gallery a', { doubleTapZoom: 1.5, captionDelay: 250 });
+gallery.on('show.simplelightbox', function () {
+
+});
+
