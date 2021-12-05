@@ -23,12 +23,11 @@ function createColorCardsMarkup(galleryItems) {
    return galleryItems
       .map(({ preview, description, original }) => {
          return `
-         <div class="gallery__item" >
-         <a class="gallery__link" href="${original}" data-lightbox="roadtrip" title="Image ${description}" >
+         <a class="gallery__item" href="${original}" data-lightbox="roadtrip" title="Image ${description}" >
          <img class="gallery__image" src="${preview}"
          data-source="${original}" id ="gallery__image--img" alt="Image ${description}"/>
          </a>
-         </div>`;
+         `;
       })
       // ==============сшиваем массив элементов в одну строку========
       .join('');
