@@ -16,7 +16,7 @@ function createColorCardsMarkup(galleryItems) {
          return `
          <div class="gallery__item" >
          <a class="gallery__link" href="${original}">
-         <img class="gallery__image" data-key ="${original}"" src="${preview}" width="510" height="340" alt="${description}"/>
+         <img class="gallery__image" data-source ="${original}"" src="${preview}" width="510" height="340" alt="${description}"/>
          </a>
          </div>`;
       })
@@ -31,7 +31,7 @@ function onClickReset(event) {
    event.preventDefault();
    // console.dir(event.target);
    // ========ссылка на картинку=============
-   let originalImages = event.target.dataset['key'];
+   let originalImages = event.target.dataset['source'];
    // console.log(originalImages);
    // ===============из мануала basiclightbox========
    basicLightbox.create(`
